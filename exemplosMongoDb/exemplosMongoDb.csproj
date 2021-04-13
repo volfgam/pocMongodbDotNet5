@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <StartupObject>exemplosMongoDb.ExcluindoDocumento</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.12.2" />
+    <PackageReference Include="MongoDB.Driver.Core" Version="2.12.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\marcus.costa\.nuget\packages\mongodb.driver.core\2.12.2\build\../runtimes/win/native/snappy64.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\marcus.costa\.nuget\packages\mongodb.driver.core\2.12.2\build\../runtimes/win/native/libzstd.dll" />
+  </ItemGroup>
+
+</Project>
